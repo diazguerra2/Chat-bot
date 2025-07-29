@@ -1,0 +1,61 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+OPENAI_SETUP.md
+user-stories.md
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+
+# Node.js
+frontend/node_modules/
+frontend/.npm
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test files
+test_*.py
+*_test.py
+tests/
+
+# Development files
+start-app.py
+start-app.bat
+start-app.sh
+run-app.py
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/

@@ -1,0 +1,129 @@
+{
+  "faq": [
+    {
+      "id": "istqb_intro",
+      "category": "general",
+      "question": "What is ISTQB?",
+      "answer": "ISTQB (International Software Testing Qualifications Board) is a multinational software testing qualification certification organization that operates internationally to define standards for software testing certifications.",
+      "keywords": ["ISTQB", "International", "Software Testing", "Qualifications Board", "certification"]
+    },
+    {
+      "id": "foundation_level",
+      "category": "certifications",
+      "question": "What is ISTQB Foundation Level (CTFL)?",
+      "answer": "The ISTQB Foundation Level (CTFL) is the entry-level certification that covers fundamental testing principles, testing throughout the software lifecycle, static testing, test techniques, test management, and tool support for testing. It requires no prerequisites and is suitable for anyone involved in software testing.",
+      "keywords": ["Foundation Level", "CTFL", "entry-level", "basic", "beginner", "fundamental"]
+    },
+    {
+      "id": "advanced_level",
+      "category": "certifications",
+      "question": "What are ISTQB Advanced Level certifications?",
+      "answer": "ISTQB Advanced Level includes three certifications: Test Analyst (CTAL-TA), Test Manager (CTAL-TM), and Technical Test Analyst (CTAL-TTA). These require Foundation Level certification and typically 18 months of testing experience. They cover advanced testing techniques, management, and technical aspects.",
+      "keywords": ["Advanced Level", "CTAL", "Test Analyst", "Test Manager", "Technical Test Analyst", "experience"]
+    },
+    {
+      "id": "expert_level",
+      "category": "certifications",
+      "question": "What are ISTQB Expert Level certifications?",
+      "answer": "ISTQB Expert Level includes Test Management (CTEL-TM) and Improving the Testing Process (CTEL-ITP). These are the highest level certifications requiring Advanced Level prerequisites and significant testing experience (typically 5+ years).",
+      "keywords": ["Expert Level", "CTEL", "Test Management", "Improving Testing Process", "highest level", "senior"]
+    },
+    {
+      "id": "specialist_certs",
+      "category": "certifications",
+      "question": "What specialist ISTQB certifications are available?",
+      "answer": "ISTQB offers several specialist certifications including Agile Testing (CTFL-AT), Mobile Application Testing (CTFL-MAT), Model-Based Testing (CTFL-MBT), Usability Testing (CTFL-UT), Performance Testing (CTFL-PT), and Security Testing (CTFL-SEC). These focus on specific testing domains.",
+      "keywords": ["specialist", "Agile Testing", "Mobile Testing", "Model-Based", "Usability", "Performance", "Security"]
+    },
+    {
+      "id": "certification_benefits",
+      "category": "career",
+      "question": "What are the benefits of ISTQB certification?",
+      "answer": "ISTQB certification provides industry recognition, demonstrates testing competency, enhances career prospects, increases salary potential (typically 10-25% increase), provides standardized knowledge, improves job mobility, and shows commitment to professional development. It's recognized globally by employers.",
+      "keywords": ["benefits", "career", "salary", "recognition", "professional development", "job opportunities"]
+    },
+    {
+      "id": "exam_format",
+      "category": "exam_info",
+      "question": "What is the ISTQB exam format?",
+      "answer": "ISTQB Foundation Level exam consists of 40 multiple-choice questions, 60 minutes duration, 65% pass mark (26/40 correct answers). Advanced Level exams have 65 questions, 180 minutes, 65% pass mark. Expert Level exams vary but typically include essays and multiple-choice questions.",
+      "keywords": ["exam format", "multiple choice", "duration", "pass mark", "questions", "time limit"]
+    },
+    {
+      "id": "study_time",
+      "category": "preparation",
+      "question": "How long does it take to prepare for ISTQB exams?",
+      "answer": "Foundation Level typically requires 40-60 hours of study time over 4-8 weeks. Advanced Level requires 80-120 hours over 8-12 weeks. Expert Level may require 120-200 hours. Study time varies based on experience, background, and learning approach.",
+      "keywords": ["study time", "preparation", "hours", "weeks", "duration", "learning"]
+    },
+    {
+      "id": "training_providers",
+      "category": "training",
+      "question": "How do I find ISTQB training providers?",
+      "answer": "ISTQB accredited training providers can be found on the official ISTQB website. Look for Accredited Training Providers (ATP) who offer classroom, online, or blended learning options. Popular providers include QAI, Sogeti, Capgemini, TÜV SÜD, and many local training companies.",
+      "keywords": ["training providers", "ATP", "accredited", "classroom", "online", "courses"]
+    },
+    {
+      "id": "exam_registration",
+      "category": "exam_info",
+      "question": "How do I register for ISTQB exams?",
+      "answer": "ISTQB exams are administered by national boards (like ASTQB in US, ISEB in UK). Register through your local board's website or through accredited training providers. You'll need to pay exam fees (typically $200-400) and may need to provide identification and meet prerequisites.",
+      "keywords": ["exam registration", "national board", "ASTQB", "ISEB", "fees", "prerequisites"]
+    },
+    {
+      "id": "career_paths",
+      "category": "career",
+      "question": "What career paths benefit from ISTQB certification?",
+      "answer": "ISTQB certification benefits QA Engineers, Test Analysts, Test Managers, Software Developers, Business Analysts, Project Managers, and anyone involved in software quality. It's valuable for both manual and automation testing roles, and for those moving into testing from development or other IT roles.",
+      "keywords": ["career paths", "QA Engineer", "Test Analyst", "Test Manager", "Software Developer", "roles"]
+    },
+    {
+      "id": "prerequisites",
+      "category": "requirements",
+      "question": "What are the prerequisites for ISTQB certifications?",
+      "answer": "Foundation Level has no prerequisites. Advanced Level requires Foundation Level certification plus 18 months testing experience. Expert Level requires Advanced Level plus 5+ years experience. Specialist certifications typically require Foundation Level but may have specific domain experience recommendations.",
+      "keywords": ["prerequisites", "requirements", "experience", "Foundation Level", "no prerequisites"]
+    },
+    {
+      "id": "cost_information",
+      "category": "cost",
+      "question": "How much do ISTQB certifications cost?",
+      "answer": "Foundation Level exam costs $200-300. Advanced Level exams cost $300-500. Training courses range from $500-2000 depending on provider and format. Total cost including training typically ranges from $700-2500 per certification. Some employers sponsor certification costs.",
+      "keywords": ["cost", "price", "fees", "exam cost", "training cost", "employer sponsorship"]
+    },
+    {
+      "id": "renewal_maintenance",
+      "category": "maintenance",
+      "question": "Do ISTQB certifications expire or need renewal?",
+      "answer": "ISTQB certifications do not expire and do not require renewal. Once earned, they are valid for life. However, it's recommended to stay current with industry practices and consider advancing to higher levels or specialist certifications as your career progresses.",
+      "keywords": ["renewal", "expiration", "maintenance", "valid for life", "no renewal required"]
+    },
+    {
+      "id": "global_recognition",
+      "category": "general",
+      "question": "Is ISTQB certification recognized globally?",
+      "answer": "Yes, ISTQB certification is recognized in over 120 countries worldwide. It's the most widely accepted software testing certification globally, making it valuable for international career mobility and remote work opportunities. Major IT companies worldwide recognize and prefer ISTQB certified professionals.",
+      "keywords": ["global recognition", "international", "worldwide", "120 countries", "career mobility"]
+    }
+  ],
+  "documentation": {
+    "testing_principles": {
+      "id": "testing_principles",
+      "title": "Seven Testing Principles",
+      "content": "1. Testing shows presence of defects, not their absence. 2. Exhaustive testing is impossible. 3. Early testing saves time and money. 4. Defects cluster together. 5. Beware of the pesticide paradox. 6. Testing is context dependent. 7. Absence-of-errors is a fallacy.",
+      "keywords": ["testing principles", "seven principles", "defects", "early testing", "context dependent"]
+    },
+    "test_levels": {
+      "id": "test_levels",
+      "title": "Test Levels",
+      "content": "Component Testing: Tests individual software components. Integration Testing: Tests interfaces between components. System Testing: Tests complete integrated system. Acceptance Testing: Formal testing to determine if system meets business requirements.",
+      "keywords": ["test levels", "component testing", "integration testing", "system testing", "acceptance testing"]
+    },
+    "test_types": {
+      "id": "test_types",
+      "title": "Test Types",
+      "content": "Functional Testing: Tests what the system does. Non-functional Testing: Tests how the system performs (performance, usability, security). Change-related Testing: Confirmation testing and regression testing after changes.",
+      "keywords": ["test types", "functional testing", "non-functional testing", "performance", "security", "regression"]
+    }
+  }
+}

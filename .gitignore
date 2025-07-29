@@ -98,3 +98,19 @@ coverage/
 *.db
 *.sqlite
 *.sqlite3
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+
+# Application specific
+data/vector_store/
+uploads/
+*.key

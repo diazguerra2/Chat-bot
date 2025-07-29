@@ -1,85 +1,94 @@
 # User Stories & MVP Definition
-## AI-Powered Chatbot Order Status Service
+## AI-Powered ISTQB Certification Guidance Chatbot
 
-**Product Focus**: E-commerce Platform Order Management System
+**Product Focus**: ISTQB Testing Certification Guidance and Course Recommendation System
 
-### User Story 1: Customer Order Status Inquiry
-**Persona**: Sarah, a customer who recently placed an order online
-**Story**: As a customer, I want to ask the chatbot about my order status so that I can get real-time updates without having to navigate through multiple pages or wait for customer service.
-**Benefit**: Provides instant, 24/7 access to order information, reducing customer anxiety and support ticket volume.
+### User Story 1: Certification Path Guidance
+**Persona**: Sarah, a junior QA tester with 1 year of experience seeking her first ISTQB certification
+**Story**: As a testing professional, I want to ask the chatbot about which ISTQB certification I should pursue first so that I can advance my career with the most appropriate qualification for my experience level.
+**Benefit**: Provides personalized certification recommendations based on experience, role, and career goals, eliminating confusion about certification paths.
 **Acceptance Criteria**:
-- User can ask "What's the status of my order #12345?"
-- Chatbot responds with current order status (pending, processing, shipped, delivered)
-- Response includes estimated delivery date if available
-- Chatbot handles invalid order numbers gracefully
-**Mapped Endpoint**: `GET /orders/{orderId}/status`
+- User can ask "Which ISTQB certification should I start with?"
+- Chatbot asks follow-up questions about experience level, current role, and goals
+- Chatbot recommends Foundation Level as starting point for beginners
+- Response includes certification benefits and prerequisites
+- Chatbot handles different experience levels (entry, intermediate, senior)
+**Mapped Endpoint**: `GET /certifications/recommendations`
 
-### User Story 2: Order Details Retrieval
-**Persona**: Mike, a customer who wants to verify his order details
-**Story**: As a customer, I want to ask the chatbot for my complete order details so that I can confirm what I purchased and review my order information.
-**Benefit**: Eliminates need to search through email confirmations or log into account dashboard.
+### User Story 2: Course and Training Provider Referrals
+**Persona**: Mike, a test analyst looking for quality training providers for CTAL-TA certification
+**Story**: As a testing professional, I want to get recommendations for reputable training providers and courses so that I can prepare effectively for my chosen ISTQB certification exam.
+**Benefit**: Saves time researching training options and ensures access to quality preparation materials.
 **Acceptance Criteria**:
-- User can request "Show me details for order #12345"
-- Chatbot displays order items, quantities, prices, and total
-- Response includes shipping address and payment method (masked)
-- Only authenticated users can access their own orders
-**Mapped Endpoint**: `GET /orders/{orderId}`
+- User can ask "Where can I find CTAL-TA training courses?"
+- Chatbot provides list of accredited training providers
+- Response includes online and in-person options
+- Chatbot mentions course formats (self-paced, instructor-led, bootcamp)
+- Includes estimated costs and duration information
+**Mapped Endpoint**: `GET /training-providers` and `GET /courses/{certificationId}`
 
-### User Story 3: Order Modification Request
-**Persona**: Lisa, a customer who wants to change her shipping address
-**Story**: As a customer, I want to ask the chatbot about modifying my order so that I can update shipping details or cancel items before they ship.
-**Benefit**: Provides self-service option for common order changes, reducing support workload.
+### User Story 3: Experience-Based Certification Advice
+**Persona**: Lisa, a senior tester with 8 years of experience considering specialist certifications
+**Story**: As an experienced testing professional, I want personalized advice on advanced and specialist ISTQB certifications so that I can specialize in areas that align with my career interests and market demand.
+**Benefit**: Helps experienced professionals identify valuable specialization paths and avoid unnecessary certifications.
 **Acceptance Criteria**:
-- User can ask "Can I change the shipping address for order #12345?"
-- Chatbot checks if order is still modifiable (not yet shipped)
-- If possible, chatbot provides modification link or instructions
-- If not possible, chatbot explains why and offers alternatives
-**Mapped Endpoint**: `PUT /orders/{orderId}` and `GET /orders/{orderId}/modifiable`
+- User can describe their experience: "I have 8 years in testing, worked with automation and mobile apps"
+- Chatbot analyzes experience and suggests relevant specialist certifications
+- Response explains why specific certifications match their background
+- Chatbot can recommend Advanced Level vs Specialist Level paths
+- Includes market demand and salary impact information
+**Mapped Endpoint**: `POST /advice/experience-based`
 
-### User Story 4: Shipping and Delivery Information
-**Persona**: Tom, a customer expecting a delivery
-**Story**: As a customer, I want to ask about shipping and delivery options so that I can understand when and how my order will arrive.
-**Benefit**: Reduces delivery-related inquiries and sets proper expectations.
+### User Story 4: Certification Prerequisites and Requirements
+**Persona**: Tom, a developer transitioning to testing who wants to understand ISTQB requirements
+**Story**: As someone new to testing, I want to understand the prerequisites and requirements for different ISTQB certifications so that I can plan my certification journey effectively.
+**Benefit**: Prevents wasted time on inappropriate certifications and provides clear learning path.
 **Acceptance Criteria**:
-- User can ask "When will order #12345 be delivered?"
-- Chatbot provides tracking number if available
-- Response includes carrier information and estimated delivery window
-- Chatbot can explain shipping delays if they occur
-**Mapped Endpoint**: `GET /orders/{orderId}/shipping`
+- User can ask "What are the requirements for CTAL-TAE?"
+- Chatbot explains prerequisites (Foundation Level requirement, experience needs)
+- Response includes exam format, duration, and passing criteria
+- Chatbot clarifies experience requirements vs recommendations
+- Provides timeline estimates for certification completion
+**Mapped Endpoint**: `GET /certifications/{id}/requirements`
 
-### User Story 5: Return and Refund Inquiries
-**Persona**: Emma, a customer who received a damaged item
-**Story**: As a customer, I want to ask the chatbot about returns and refunds so that I can quickly understand my options for returning or exchanging items.
-**Benefit**: Streamlines return process and provides immediate guidance on return policies.
+### User Story 5: Career-Specific Certification Matching
+**Persona**: Emma, a project manager who wants to add testing expertise to her skill set
+**Story**: As a professional in a related field, I want to understand which ISTQB certifications would be most valuable for my specific career path so that I can make an informed investment in my professional development.
+**Benefit**: Ensures certification choices align with career goals and provide tangible value.
 **Acceptance Criteria**:
-- User can ask "How do I return items from order #12345?"
-- Chatbot explains return policy and eligibility
-- Response includes return timeframe and process steps
-- Chatbot can initiate return request if applicable
-**Mapped Endpoint**: `POST /orders/{orderId}/returns` and `GET /returns/policy`
+- User can describe their role: "I'm a project manager wanting to understand testing better"
+- Chatbot asks about specific goals (team management, quality oversight, career change)
+- Response recommends appropriate certifications (Foundation Level, Test Management)
+- Chatbot explains how certifications apply to their current role
+- Includes success stories from similar professionals
+**Mapped Endpoint**: `POST /advice/career-match`
 
 ## MVP Features Summary
 
 ### Core Features
 1. **Authentication System**: User registration and login with JWT tokens
-2. **Chat Interface**: Natural language processing for order-related queries
-3. **Order Status API**: Integration with order management system
-4. **Knowledge Base**: Product and policy information for accurate responses
-5. **Error Handling**: Graceful handling of invalid requests and system errors
+2. **Certification Guidance**: Intelligent recommendations based on experience and goals
+3. **Training Provider Database**: Comprehensive list of accredited course providers
+4. **Requirement Analysis**: Detailed prerequisite and requirement information
+5. **Knowledge Base**: ISTQB certification details, career paths, and industry insights
+6. **Personalized Advice**: Experience-based recommendations and career matching
 
 ### API Endpoints Overview
 - `POST /users/register` - User registration
 - `POST /users/login` - User authentication
 - `POST /chat` - Main chat endpoint (protected)
-- `GET /orders/{orderId}` - Order details
-- `GET /orders/{orderId}/status` - Order status
-- `GET /orders/{orderId}/shipping` - Shipping information
-- `PUT /orders/{orderId}` - Order modification
-- `POST /orders/{orderId}/returns` - Return initiation
-- `GET /returns/policy` - Return policy information
+- `GET /certifications` - List all ISTQB certifications
+- `GET /certifications/{id}` - Specific certification details
+- `GET /certifications/{id}/requirements` - Prerequisites and requirements
+- `GET /certifications/recommendations` - Personalized recommendations
+- `GET /training-providers` - Accredited training providers
+- `GET /courses/{certificationId}` - Available courses for certification
+- `POST /advice/experience-based` - Experience-based guidance
+- `POST /advice/career-match` - Career-specific recommendations
 
 ### Success Metrics
-- Response time < 2 seconds for order queries
-- 95% accuracy in order information retrieval
-- 90% customer satisfaction rating
-- 50% reduction in order-related support tickets
+- Response time < 2 seconds for certification queries
+- 95% accuracy in certification recommendations
+- 90% user satisfaction with guidance quality
+- 80% of users follow through with recommended certification path
+- 50% reduction in certification selection confusion

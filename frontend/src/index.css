@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-istqb-blue hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .chat-message {
+    @apply p-4 rounded-lg max-w-lg animate-slide-up;
+  }
+  
+  .chat-user {
+    @apply bg-istqb-blue text-white ml-auto;
+  }
+  
+  .chat-bot {
+    @apply bg-gray-100 text-gray-800 mr-auto;
+  }
+  
+  .suggestion-button {
+    @apply bg-blue-50 hover:bg-blue-100 text-istqb-blue px-3 py-2 rounded-full text-sm border border-blue-200 transition-colors duration-200 cursor-pointer;
+  }
+  
+  .certification-card {
+    @apply bg-white rounded-lg shadow-md p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-200;
+  }
+}
