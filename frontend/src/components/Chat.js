@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Bot, User, Loader2, Paperclip, Upload } from 'lucide-react';
+import { Send, Bot, User, Loader2, Upload } from 'lucide-react';
 import { chatAPI } from '../services/api';
 import api from '../services/api';
 
