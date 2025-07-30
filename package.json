@@ -1,0 +1,15 @@
+{
+  "name": "istqb-chatbot",
+  "version": "1.0.0",
+  "description": "ISTQB Chatbot with Frontend and Backend",
+  "main": "main.py",
+  "scripts": {
+    "start": "node server.js",
+    "build:frontend": "cd frontend && npm install && npm run build"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
