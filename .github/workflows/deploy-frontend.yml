@@ -37,6 +37,8 @@ jobs:
       run: |
         mkdir -p deploy-package
         cp -r frontend/build/* deploy-package/
+        cp server.js deploy-package/
+        cp package.json deploy-package/
         ls -la deploy-package/
 
     - name: Deploy to Azure Web App
